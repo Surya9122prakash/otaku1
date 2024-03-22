@@ -51,9 +51,9 @@ app.use("/api/users", userRoute);
 app.use("/api/posts", postRoute);
 app.use("/api/comments", commentRoute);
 
-app.get("/", (req, res) => {
-  res.send("SErver is working");
-});
+// app.get("/", (req, res) => {
+//   res.send("SErver is working");
+// });
 
 app.listen(process.env.PORT, () => {
   console.log("App is running on Port " + process.env.PORT);
