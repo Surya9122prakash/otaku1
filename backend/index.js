@@ -26,6 +26,8 @@ mongoose
 
 app.use(express.json());
 app.use("/images", express.static(path.join(__dirname, "/images")));
+const buildpath = path.join(__dirname,"../dist");
+app.use(express.static(buildpath));
 // const corsOptions = {
 //   origin: ["https://otaku-blogs.vercel.app", "http://otaku-blogs.vercel.app", "*"],
 //   // origin:"http://localhost:5173",
